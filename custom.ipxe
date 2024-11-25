@@ -17,7 +17,7 @@ goto ${menu} ||
 :Kali
 imgfree
 echo Booting Kali Linux installer..
-set base-url ${pxe_url}/kali/kali-installer/amd64/
+set base-url ${pxe_url}/kali/debian-installer/amd64/
 set preseed-url ${pxe_url}/kali/pxelinux.cfg
 kernel ${base-url}/linux
 initrd ${base-url}/initrd.gz
