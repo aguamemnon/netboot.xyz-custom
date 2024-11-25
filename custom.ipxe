@@ -19,8 +19,8 @@ imgfree
 echo Booting Kali Linux installer..
 set base-url ${pxe_url}/kali/kali-installer/amd64/
 set preseed-url ${pxe_url}/kali/preseed.cfg
-kernel ${base-url}/kali/kali-installer/amd64/linux
-initrd ${base-url}/kali/kali-installer/amd64/initrd.gz
+kernel ${base-url}/linux
+initrd ${base-url}/initrd.gz
 imgargs linux auto=true url=${preseed-url} hostname=unassigned-hostname domain=unassigned-domain
 boot
 goto custom
