@@ -18,7 +18,7 @@ goto ${menu} ||
 imgfree
 echo Booting Kali Linux installer..
 set base-url ${pxe_url}/kali/debian-installer/amd64/
-set preseed-url ${pxe_url}/kali/pxelinux.cfg/default
+set preseed-url ${pxe_url}/kali/preseed.cfg
 kernel ${base-url}/linux
 initrd ${base-url}/initrd.gz
 imgargs linux auto=true url=${preseed-url} hostname=unassigned-hostname domain=unassigned-domain
